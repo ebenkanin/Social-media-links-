@@ -1,0 +1,128 @@
+html, body {
+    height: 100%;
+    background-color:  hsl(0, 0%, 8%);
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    height: 650px;
+    width: 400px;
+    background-color: hsl(0, 0%, 12%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.header-img{
+    margin-bottom: 0;
+}
+.header-img img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+h5{
+    color: hsl(75, 94%, 57%);
+    margin-top: 0;
+    font-weight: 600;
+}
+
+p{
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    margin-top: 0;
+}
+.wrapper{
+    width: 350px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.link-container{
+    width: 100%;
+    height: 40px;
+    background-color: hsl(0, 0%, 18%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.link-container:hover{
+    text-decoration-color: black;
+
+}
+
+.link-container a{
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+    cursor: pointer;
+
+    
+}
+
+.link-container:hover,
+.link-container:hover a,
+.link-container a:active,
+.link-container:active,
+.link-container:focus,
+.link-container a:focus {
+background-color: hsl(75, 94%, 57%);
+color: black;
+}
+
+.link-container:focus-within {
+background-color: hsl(75, 94%, 57%);
+color: black;
+}
+
+.link-container:focus-within a {
+color: black;
+}
+/*
+@media (min-width: 400px) {
+    .container { 
+        background-color: hsl(200, 94%, 57%); /* Use a different color for testing 
+        width: 100%;
+    }
+}/*
+
+/* Media query for max-width */
+@media (max-width: 375px) {
+    .container { 
+        /*background-color: hsl(75, 94%, 57%);*/
+        width: 100%;
+
+    }
+
+    .header-img img{
+        height: 100px;
+        width: 100px;
+    }
+
+    h1{
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .link-container{
+        width: 80%;
+    }
+}
+
